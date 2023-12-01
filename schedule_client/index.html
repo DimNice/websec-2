@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+        <img src="https://ssau.ru/pagefiles/of_docs/logo_osnovnoy_RUS.png" width="189" height="95" />
+        <a class="h1-text schedule-title" href="#">6411-100503D</a>
+    </div>
+  </header>
+
+  <main>
+    <datalist id="search-list">
+    </datalist>
+    <h1 class="h2-text">Расписание</h1>
+    <form>
+      <input id="search-input" type="text" placeholder="Поиск..." list="search-list">
+    </form>
+    <div class="nav-buttons">
+      <button id="previousWeek" onclick="changePage(false)">Предыдущая неделя</button>
+      <button id="nextWeek" onclick="changePage(true)">Следующая неделя</button>
+    </div>
+    <div class="nav-buttons">
+      <button id="previousDay" onclick="generateTable(true, false)">Предыдущий день</button>
+      <button id="nextDay" onclick="generateTable(true, true)">Следующий день</button>
+    </div>
+    <table class="schedule-table text-style1" >
+      <tr class="headers-row">
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <h1 class="h2-text">Контакты</h1>
+    <div class="connection">
+    <section>
+        <h2>Приемная комиссия</h2>
+        <p class="info-text">8-(800)-550-34-35, 8-(846)-267-48-67</p>
+        <p class="info-text">priem@ssau.ru</p>
+        <p class="info-text">ssau.ru/priem</p>
+    </section>
+    </div>
+    <div class="connection">
+    <section>
+        <h2>Центр по связям с общественностью</h2>
+        <p class="info-text">pr@ssau.ru</p>
+        <p class="info-text">https://ssau.ru/pagefiles/trebovaniya_publication_site.pdf</p>
+    </section>
+    </div>
+    <div class="connection">
+    <section>
+        <h2>Техническая поддержка</h2>
+        <p class="info-text">+7-(846)-267-49-99</p>
+        <p class="info-text">help@ssau.ru</p>
+    </section>  
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
